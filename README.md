@@ -11,7 +11,7 @@ make build
 make run
 ```
 
-3. Execute run_dbscan.py
+3. (In docker container) Execute run_dbscan.py
 ```
 python /home/run_dbscan.py
 ```
