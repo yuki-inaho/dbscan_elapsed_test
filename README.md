@@ -1,4 +1,4 @@
-# Procedure to run run_dbscan
+# Procedure to execute run_dbscan.py
 1. Build docker image
 ```
 git clone https://github.com/yuki-inaho/dbscan_elapsed_test.git
