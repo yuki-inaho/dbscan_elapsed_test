@@ -27,7 +27,7 @@ def pointcloud_generator():
 
 
 if __name__ == "__main__":
-    o3d.utility.set_verbosity_level(o3d.utility.Debug)
+    o3d.utility.set_verbosity_level(o3d.utility.Info)
 
     for pcl_name, pcl, eps in pointcloud_generator():
         print("%s has %d points" % (pcl_name, np.asarray(pcl.points).shape[0]))
@@ -35,3 +35,4 @@ if __name__ == "__main__":
             pcl.cluster_dbscan(eps=eps, min_points=10, print_progress=True))
         max_label = labels.max()        
         print("%s has %d clusters" % (pcl_name, max_label + 1))
+        print("")
